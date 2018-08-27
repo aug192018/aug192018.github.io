@@ -1,4 +1,4 @@
-table {
+.table {
     border: 1px solid red;
     width: 100%; /* for small screens */
     max-width: 20em; /* define width while keeping it flexible */
