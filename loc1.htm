@@ -15,7 +15,7 @@ title:Heart of Centretown
   <form id="FirstQ">
     <label for="answer">Store name:</label>
     <input type="text" id="answer" name="user_name" />
-    <input type="button" onclick="checkInput()" value="Check">
+    <input type="button" value="Check" onclick="checkInput(); return false;" >
   </form>
 <div>
 
@@ -24,6 +24,19 @@ title:Heart of Centretown
 <script>
 function checkInput() {
   alert( 'Hello, world!' );
+}
+  
+    var text = document.getElementById("FirstQ").elements[0].value;
+    var text = "gumballs";
+    document.getElementById("demo").innerHTML = text;
+}
+  
+function lazyHash(var InString) {
+    var hash = 5381;
+    for(var i = 0; i < InString.length; i++)
+    {
+       hash = hash*33 + charAt(i);
+    }
 }
 
 </script>
