@@ -5,7 +5,7 @@ the right, we value the items on the left more.
 {:.mycenter}
 Test numero 2
 
-{:.mycenter}
+<center>
 <table id="Locations">
 <tr>
   <td>
@@ -26,6 +26,7 @@ Test numero 2
   <td>Victoria Island</td>
 </tr>
 </table>
+  </center>
 
 <style>
 .mycenter {
