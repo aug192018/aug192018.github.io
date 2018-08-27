@@ -27,7 +27,7 @@ CustomReturn: true
 <img src="none.jpg" onload="this.onload=null; this.src=f('15790.jpg'); " height="100" width="178">
 
 <div id="FirstAnswer" style="display: none; text-align:center">
-  <img src="none.jpg" onload="this.onload=null; this.src=f('15790.jpg'); " height="100" width="178">
+  <img id="imgFirstAnswer" src="none.jpg" height="100" width="178">
 </div>  
   
 <script>
@@ -42,6 +42,7 @@ function dogs() {
   if (HashResult == 229439158001674) 
   {
     document.getElementById("demo").innerHTML = "Success!";
+    document.getElementById("imgFirstAnswer").src = f("15790.jpg");
     document.getElementById("FirstAnswer").style.display = "block";
   }
   else 
