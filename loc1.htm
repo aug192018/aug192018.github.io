@@ -25,9 +25,18 @@ title:Heart of Centretown
 function dogs() {
     var text = document.getElementById("FirstQ").elements[0].value;
     var HashResult = lazyHash(text);
-    text = text + "<br>" + HashResult;
+    //text = text + "<br>" + HashResult;
   
-    document.getElementById("demo").innerHTML = text;
+    //document.getElementById("demo").innerHTML = text;
+  
+  if (HashResult == 229439158001674) 
+  {
+    document.getElementById("demo").innerHTML = "Success!"
+  }
+  else 
+  {
+    document.getElementById("demo").innerHTML = "Try again :("
+  }
 }
   
 function lazyHash(InString) {
