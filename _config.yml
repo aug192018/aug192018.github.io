@@ -1,6 +1,6 @@
 theme: jekyll-theme-cayman
 description: 🐍🐄 Jaymie's 2018 Longform Birthday Adventure 💪🥨
-title: [Happy Birthday!](https://aug192018.github.io/) 
+title: Happy Birthday! 
 defaults:
   - scope:
       path: ""
