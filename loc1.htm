@@ -13,13 +13,16 @@ title:Heart of Centretown
 
 <div>
   <form id="FirstQ">
-    <label for="answer">Store name:</label>
     <input type="text" id="answer" name="user_name" />
     <input type="button" value="Check" onclick="dogs(); return false;" />
   </form>
 <div>
+  
+<div id="myDIV" style.display="none">
+  <p id="secretP">SECRET</p>
+</div>  
 
-<p id="demo">"bugs."</p>
+<p id="demo"></p>
   
 <script>
 function dogs() {
@@ -31,11 +34,13 @@ function dogs() {
   
   if (HashResult == 229439158001674) 
   {
-    document.getElementById("demo").innerHTML = "Success!"
+    document.getElementById("demo").innerHTML = "Success!";
+    document.getElementById("myDIV").style.display = "block";
   }
   else 
   {
     document.getElementById("demo").innerHTML = "Try again :("
+    document.getElementById("myDIV").style.display = "none";
   }
 }
   
