@@ -24,8 +24,6 @@ CustomReturn: true
   <p id="demo"></p>
 </div>
 
-<img src="none.jpg" onload="this.onload=null; this.src=f('15790.jpg'); " height="100" width="178">
-
 <div id="FirstAnswer" style="display: none; text-align:center">
   <img id="imgFirstAnswer" src="none.jpg" height="100" width="178">
 </div>  
@@ -38,11 +36,10 @@ function dogs() {
   
     //document.getElementById("demo").innerHTML = text;
   
-  //Cheater!
   if (HashResult == 229439158001674) 
   {
     document.getElementById("demo").innerHTML = "Success!";
-    document.getElementById("imgFirstAnswer").src = f("15790.jpg");
+    document.getElementById("imgFirstAnswer").src = f("img.jpg");
     document.getElementById("FirstAnswer").style.display = "block";
   }
   else 
@@ -61,10 +58,10 @@ function lazyHash(InString) {
     return hash;
 }
   
-function f(imgloc) {
- //oh no
- alert("/" + parseInt((lazyHash("1510129177")-lazyHash("crumblies") + 31)/1000000000) + "/" + imgloc);
- return "/" + parseInt((lazyHash("1510129177")-lazyHash("crumblies") + 31)/1000000000) + "/" + imgloc;
+function f(ta) {
+ //Cheater!!
+ //alert("/" + parseInt((lazyHash("1510129177")-lazyHash("crumblies") + 31)/1000000000) + "/" + ta);
+ return "/" + parseInt((lazyHash("1510129177")-lazyHash("crumblies") + 31)/1000000000) + "/" + ta;
 }
 
 </script>
