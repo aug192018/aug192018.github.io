@@ -1,5 +1,4 @@
 ---
-layout: default
 title:Heart of Centretown
 CustomReturn: true
 ---
