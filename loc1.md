@@ -24,10 +24,10 @@ CustomReturn: true
   <p id="demo"></p>
 </div>
 
-<img src="none.png" onload="this.onload=null; this.src=f('15790.jpg'); " height="100" width="178">
+<img src="none.jpg" onload="this.onload=null; this.src=f('15790.jpg'); " height="100" width="178">
 
 <div id="FirstAnswer" style="display: none; text-align:center">
-  <img src="none.png" onload="this.onload=null; this.src=f('15790.jpg'); " height="100" width="178">
+  <img src="none.jpg" onload="this.onload=null; this.src=f('15790.jpg'); " height="100" width="178">
 </div>  
   
 <script>
