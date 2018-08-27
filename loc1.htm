@@ -11,18 +11,18 @@ title:Heart of Centretown
 </p>
 <br>
 
-<div>
+<div style="text-align:center">
   <form id="FirstQ">
     <input type="text" id="answer" name="user_name" />
     <input type="button" value="Check" onclick="dogs(); return false;" />
   </form>
 <div>
-  
-<div id="myDIV" style="display: none;">
-  <p id="secretP">SECRET</p>
-</div>  
 
 <p id="demo"></p>
+
+<div id="myDIV" style="display: none; text-align:center">
+  <p id="secretP">SECRET</p>
+</div>  
   
 <script>
 function dogs() {
@@ -39,7 +39,7 @@ function dogs() {
   }
   else 
   {
-    document.getElementById("demo").innerHTML = "Try again :("
+    document.getElementById("demo").innerHTML = "Try again :( (Your last try was: " + text;
     document.getElementById("myDIV").style.display = "none";
   }
 }
