@@ -1,11 +1,11 @@
-{:.mycenter}
-That is, while there is value in the items on
-the right, we value the items on the left more.
+table {
+    border: 1px solid red;
+    width: 100%; /* for small screens */
+    max-width: 20em; /* define width while keeping it flexible */
+    margin-right: auto;
+    margin-left: auto;
+}
 
-{:.mycenter}
-Test numero 2
-
-<center>
 <table id="Locations">
 <tr>
   <td>
@@ -26,7 +26,6 @@ Test numero 2
   <td>Victoria Island</td>
 </tr>
 </table>
-  </center>
 
 <style>
 .mycenter {
