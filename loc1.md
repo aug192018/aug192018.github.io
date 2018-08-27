@@ -25,7 +25,7 @@ CustomReturn: true
 </div>
 
 <div id="FirstAnswer" style="display: none; text-align:center">
-  <img id="imgFirstAnswer" src="none.jpg" height="100" width="178">
+  <img id="imgFirstAnswer" src="none.jpg" height="534" width="300">
 </div>  
   
 <script>
