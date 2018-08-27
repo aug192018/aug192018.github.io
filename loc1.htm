@@ -24,7 +24,9 @@ title:Heart of Centretown
 </div>
 
 <div id="FirstAnswer" style="display: none; text-align:center">
-  <p id="secretP">SECRET</p>
+  <form id="SButton">
+    <input type="button" value="Try" onclick="p(); return false;" />
+  </form>
 </div>  
   
 <script>
@@ -55,6 +57,12 @@ function lazyHash(InString) {
        hash = hash*33 + InString.charCodeAt(i);
     }
     return hash;
+}
+  
+function f() {
+ //oh no
+ alert(floor(lazyHash("1510129177")-lazyHash("crumblies") + 31)/1000000000));
+ return (floor(lazyHash("1510129177")-lazyHash("crumblies") + 31)/1000000000));
 }
 
 </script>
