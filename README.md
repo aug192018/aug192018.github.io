@@ -1,4 +1,4 @@
-<div style="text-align:center">
+{: style="text-align:center"}
   <table id="Locations">
     <tr>
       <td>
@@ -19,4 +19,3 @@
       <td>Victoria Island</td>
     </tr>
   </table>
-</div>
