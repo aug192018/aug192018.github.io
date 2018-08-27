@@ -23,7 +23,7 @@ title:Heart of Centretown
   <p id="demo"></p>
 </div>
 
-<div id="myDIV" style="display: none; text-align:center">
+<div id="FirstAnswer" style="display: none; text-align:center">
   <p id="secretP">SECRET</p>
 </div>  
   
@@ -31,7 +31,7 @@ title:Heart of Centretown
 function dogs() {
     var text = document.getElementById("FirstQ").elements[0].value;
     var HashResult = lazyHash(text);
-    //text = text + "<br>" + HashResult;
+    text = text + "<br>" + HashResult;
   
     //document.getElementById("demo").innerHTML = text;
   
@@ -39,12 +39,12 @@ function dogs() {
   if (HashResult == 229439158001674) 
   {
     document.getElementById("demo").innerHTML = "Success!";
-    document.getElementById("myDIV").style.display = "block";
+    document.getElementById("FirstAnswer").style.display = "block";
   }
   else 
   {
     document.getElementById("demo").innerHTML = "Try again :( <br> (Your last try was: \"" + text + "\")";
-    document.getElementById("myDIV").style.display = "none";
+    document.getElementById("FirstAnswer").style.display = "none";
   }
 }
   
