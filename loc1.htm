@@ -24,7 +24,7 @@ title:Heart of Centretown
 </div>
 
 <div id="FirstAnswer" style="display: none; text-align:center">
-  <img src= "/" + f() + "/15790.jpg" height="100" width="178">
+  <img src="f()" height="100" width="178">
 </div>  
   
 <script>
@@ -57,9 +57,10 @@ function lazyHash(InString) {
     return hash;
 }
   
-function f() {
+function f(in) {
  //oh no
- return parseInt((lazyHash("1510129177")-lazyHash("crumblies") + 31)/1000000000);
+ alert("/" + parseInt((lazyHash("1510129177")-lazyHash("crumblies") + 31)/1000000000) + "/" + in);
+ return "/" + parseInt((lazyHash("1510129177")-lazyHash("crumblies") + 31)/1000000000) + "/" + in;
 }
 
 </script>
