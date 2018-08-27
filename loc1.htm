@@ -19,7 +19,9 @@ title:Heart of Centretown
   </form>
 </div>
 
-<p id="demo"></p>
+<div style="text-align:center">
+  <p id="demo"></p>
+</div>
 
 <div id="myDIV" style="display: none; text-align:center">
   <p id="secretP">SECRET</p>
@@ -40,7 +42,7 @@ function dogs() {
   }
   else 
   {
-    document.getElementById("demo").innerHTML = "Try again :( (Your last try was: " + text;
+    document.getElementById("demo").innerHTML = "Try again :( <br> (Your last try was: \"" + text + "\")";
     document.getElementById("myDIV").style.display = "none";
   }
 }
