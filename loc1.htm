@@ -24,6 +24,9 @@ title:Heart of Centretown
 <script>
 function dogs() {
     var text = document.getElementById("FirstQ").elements[0].value;
+    var HashResult = lazyHash(text);
+    text = text + "<br>" + HashResult;
+  
     document.getElementById("demo").innerHTML = text;
 }
   
@@ -31,8 +34,9 @@ function lazyHash(InString) {
     var hash = 5381;
     for(var i = 0; i < InString.length; i++)
     {
-       hash = hash*33 + charAt(i);
+       hash = hash*33 + charCodeAt(i);
     }
+    return hash;
 }
 
 </script>
