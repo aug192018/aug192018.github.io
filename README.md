@@ -1,4 +1,12 @@
-{: style="text-align:center"}
+{:.mycenter}
+That is, while there is value in the items on
+the right, we value the items on the left more.
+
+<style>
+.mycenter {
+    text-align:center;
+}
+</style>
   <table id="Locations">
     <tr>
       <td>
