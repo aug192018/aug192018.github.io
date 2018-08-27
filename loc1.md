@@ -1,5 +1,5 @@
 ---
-title:Heart of Centretown
+title: Heart of Centretown
 CustomReturn: true
 ---
 
