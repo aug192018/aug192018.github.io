@@ -40,6 +40,7 @@ function hash() {
 }
 
 var di = {};
+di[' '] = "p4";
 di['a'] = "qz"; di['A'] = "QZ"; 
 di['b'] = "wx"; di['B'] = "WX"; 
 di['c'] = "ec"; di['C'] = "EC"; 
