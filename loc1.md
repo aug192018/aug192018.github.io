@@ -143,14 +143,12 @@ CustomReturn: true
 
   var SecondAnswer = getParameterByName("sa")
   var PreviousSecondAnswer = getCookie("loc1_SecondAnswerCookie");
-  if 
-  (  
-    lazyHash(SecondAnswer)          == 7571710509952919 ||
-    lazyHash(PreviousSecondAnswer)  == 7571710509952919
-  )
-  {
-    setCookie("loc1_SecondAnswerCookie", SecondAnswer, 365);
-    
+  if (lazyHash(SecondAnswer) == 7571710509952919)
+    {setCookie("loc1_SecondAnswerCookie", SecondAnswer, 365); LoadAll();} 
+  else if (lazyHash(PreviousSecondAnswer) == 7571710509952919)
+    {LoadAll();}
+
+  function LoadAll(){
     document.getElementById("demo").innerHTML = "Success!";
     document.getElementById("imgFirstAnswer").src = f("img.jpg");
     document.getElementById("FirstAnswer").style.display = "block";
