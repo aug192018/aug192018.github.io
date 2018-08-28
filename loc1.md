@@ -71,10 +71,16 @@ CustomReturn: true
       document.getElementById("imgFirstAnswer").src = f("img.jpg");
       document.getElementById("FirstAnswer").style.display = "block";
     }
+    else if (HashResult == 210726503048)
+    {
+      alert("Reset!");
+      setCookie("SecondAnswerCookie", "", 365);
+    }
     else 
     {
       document.getElementById("demo").innerHTML = "Try again :( <br> (Your last try was: \"" + text + "\")";
       document.getElementById("FirstAnswer").style.display = "none";
+      document.getElementById("SecondAnswer").style.display = "none";
     }
   }
 
@@ -135,9 +141,15 @@ CustomReturn: true
   }
 
   var SecondAnswer = getParameterByName("sa")
-  if (lazyHash(SecondAnswer) == 7571710509952919)
+  var PreviousSecondAnswer = getCookie("SecondAnswerCookie");
+  if 
+  (  
+    lazyHash(SecondAnswer)          == 7571710509952919 ||
+    lazyHash(PreviousSecondAnswer)  == 7571710509952919
+  )
   {
-    document.getElementById("FirstQ").elements[0].value = PreviousFirstAnswer;
+    setCookie("SecondAnswerCookie", SecondAnswer, 365);
+    
     document.getElementById("demo").innerHTML = "Success!";
     document.getElementById("imgFirstAnswer").src = f("img.jpg");
     document.getElementById("FirstAnswer").style.display = "block";
