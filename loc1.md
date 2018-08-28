@@ -144,7 +144,7 @@ if (lazyHash(SecondAnswer) == 7571710509952919)
   document.getElementById("FirstAnswer").style.display = "block";
   
   document.getElementById("SecondAnswer").style.display = "block";
-  document.getElementById("SecondAnswer").innerHTML = "" +  "test" + "</font></b></h2>"
+  document.getElementById("DecodedMessage").innerHTML = "" +  "test" + "</font></b></h2>"
 }
 
 </script>
