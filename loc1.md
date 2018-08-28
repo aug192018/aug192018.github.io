@@ -49,7 +49,7 @@ CustomReturn: true
   <h2>The last step</h2>
   Find your gentleman friend and say to him the magical phrase:
   <b>
-  <p id="DecodedMessage" style="color:rgb(43, 255, 195)"></p>
+  <p id="DecodedMessage" style="color:rgb(43, 255, 215);font-size:22px"></p>
   </b>
   <br>
 </div>  
