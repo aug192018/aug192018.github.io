@@ -45,9 +45,9 @@ CustomReturn: true
   <hr>
   <h2>The last step</h2>
   Find your gentleman friend and say to him the magical phrase:
-  <b><font color='rgb(223, 226, 36)'>
-  <p id="DecodedMessage"></p>
-  </b></font>
+  <b>
+  <p id="DecodedMessage" style="color:rgb(223, 226, 36)"></p>
+  </b>
 </div>  
   
 <script>
