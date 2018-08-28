@@ -126,6 +126,7 @@ if (lazyHash(PreviousFirstAnswer) == 229439158001674)
 }
 
 var SecondAnswer = getParameterByName("sa")
+alert(SecondAnswer);
 if (lazyHash(SecondAnswer) == 8246702736392816000)
 {
   document.getElementById("FirstQ").elements[0].value = PreviousFirstAnswer;
