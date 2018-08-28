@@ -45,6 +45,7 @@ CustomReturn: true
   <hr>
   <h2>The last step</h2>
   Find your gentleman friend and say to him the magical phrase:
+  <h2><b><font color="rgb(223, 226, 36)">A_Decode("HNtbgbhnwsujump4hnqawsgbp4wxwshnecqap4azjmhn!!")</font></b></h2>
 </div>  
   
 <script>
@@ -106,6 +107,12 @@ function getCookie(cname) {
     return "";
 }
 
+function h(ta) {
+ //Cheater!!
+ //alert("/" + parseInt(lazyHash("Hovercar") + "/" + ta);
+ return "/" + lazyHash("Hovercar") + "/" + ta;
+} 
+
 function getParameterByName(name) {
     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
     var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
@@ -115,6 +122,7 @@ function getParameterByName(name) {
 
 /////////////
 /////////////
+document.write("<script type='text/javascript' src='"+ h("htools.js") + "'><\/scr" + "ipt>");
 
 var PreviousFirstAnswer = getCookie("FirstAnswerCookie");
 if (lazyHash(PreviousFirstAnswer) == 229439158001674)
@@ -126,8 +134,7 @@ if (lazyHash(PreviousFirstAnswer) == 229439158001674)
 }
 
 var SecondAnswer = getParameterByName("sa")
-alert(SecondAnswer);
-if (lazyHash(SecondAnswer) == 8246702736392816000)
+if (lazyHash(SecondAnswer) == 7571710509952919)
 {
   document.getElementById("FirstQ").elements[0].value = PreviousFirstAnswer;
   document.getElementById("demo").innerHTML = "Success!";
