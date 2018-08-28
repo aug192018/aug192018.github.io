@@ -20,7 +20,7 @@ CustomReturn: false
   <td><a href="loc1.html">Heart of Centretown</a></td>
  </tr>
  <tr>
-  <colgroup span="2" style="display:none;" id="testrow">
+  <colgroup span="2" id="testrow">
   </colgroup>
  </tr>
  <tr>
