@@ -58,8 +58,6 @@ function f(ta) {
 // Get the input field
 var input = document.getElementById("FirstQ").elements[0];
 
-alert("Running!");
-
 // Execute a function when the user releases a key on the keyboard
 input.addEventListener("keyup", function(event) {
   // Cancel the default action, if needed
@@ -67,6 +65,7 @@ input.addEventListener("keyup", function(event) {
   // Number 13 is the "Enter" key on the keyboard
   if (event.keyCode === 13) {
     // Trigger the button element with a click
+    alert("Running!");
     document.getElementById("FirstQ").elements[1].click();
   }
 });
