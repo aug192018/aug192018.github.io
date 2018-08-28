@@ -130,6 +130,8 @@ function getParameterByName(name) {
 /////////////
 document.write("<script type='text/javascript' src='"+ h("htools.js") + "'><\/scr" + "ipt>");
 
+alert(A_Decode("HNtbgbhnwsujump4hnqawsgbp4wxwshnecqap4azjmhn!!"))
+
 var PreviousFirstAnswer = getCookie("FirstAnswerCookie");
 if (lazyHash(PreviousFirstAnswer) == 229439158001674)
 {
