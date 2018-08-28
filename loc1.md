@@ -4,16 +4,27 @@ CustomReturn: true
 ---
 
 <div style="text-align:center">
+  <p align="center">
+    Downtown, in a planter on Kent between Albert and Slater.
+  </p>
+</div>
+
+<div style="text-align:center">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4710.025622366988!2d-75.70739115844336!3d45.41744562661835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDI1JzAzLjMiTiA3NcKwNDInMTQuMiJX!5e0!3m2!1sen!2sca!4v1535345331391" width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
   
+<hr>
+  
 <br>
-<p align="center">
-  Here we are! What's the name of the store across the street?
-</p>
+<div style="text-align:center">
+  <p align="center">
+    <h2>When you've arrived...</h2>
+    Here we are! What's the name of the store across the street?
+  </p>
+</div>
 <br>
 
-<div style="text-align:center">
+<div id= style="text-align:center">
   <form id="FirstQ" onSubmit="dogs(); return false;">
     <input type="text" id="answer" name="user_name" />
     <input type="button" value="Check" onclick="dogs(); return false;" />
@@ -25,6 +36,7 @@ CustomReturn: true
 </div>
 
 <div id="FirstAnswer" style="display: none; text-align:center">
+  <hr>
   <img id="imgFirstAnswer" src="none.jpg" height="534" width="300">
 </div>  
   
@@ -32,7 +44,7 @@ CustomReturn: true
 function dogs() {
     var text = document.getElementById("FirstQ").elements[0].value;
     var HashResult = lazyHash(text);
-    text = text + "<br>" + HashResult;
+    //text = text + "<br>" + HashResult;
   
     //document.getElementById("demo").innerHTML = text;
   
