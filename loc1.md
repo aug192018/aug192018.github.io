@@ -14,7 +14,7 @@ CustomReturn: true
 <br>
 
 <div style="text-align:center">
-  <form id="FirstQ">
+  <form id="FirstQ" onSubmit="dogs(); return false;">
     <input type="text" id="answer" name="user_name" />
     <input type="button" value="Check" onclick="dogs(); return false;" />
   </form>
