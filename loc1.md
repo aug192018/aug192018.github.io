@@ -54,109 +54,96 @@ CustomReturn: true
   <br>
 </div>  
   
-<script type="text/javascript" id="MainScript">
-function dogs() {
-    var text = document.getElementById("FirstQ").elements[0].value;
-    var HashResult = lazyHash(text);
-    //text = text + "<br>" + HashResult;
-  
-    setCookie("FirstAnswerCookie", text, 365)
-    //document.getElementById("demo").innerHTML = text;
-  
-  if (HashResult == 229439158001674) 
+<script type="text/javascript" id="MainScript" src = "/7993892928/htools.js">
+  function dogs() {
+      var text = document.getElementById("FirstQ").elements[0].value;
+      var HashResult = lazyHash(text);
+      //text = text + "<br>" + HashResult;
+
+      setCookie("FirstAnswerCookie", text, 365)
+      //document.getElementById("demo").innerHTML = text;
+
+    if (HashResult == 229439158001674) 
+    {
+      document.getElementById("demo").innerHTML = "Success!";
+      document.getElementById("imgFirstAnswer").src = f("img.jpg");
+      document.getElementById("FirstAnswer").style.display = "block";
+    }
+    else 
+    {
+      document.getElementById("demo").innerHTML = "Try again :( <br> (Your last try was: \"" + text + "\")";
+      document.getElementById("FirstAnswer").style.display = "none";
+    }
+  }
+
+  function f(ta) {
+   //Cheater!!
+   //alert("/" + parseInt((lazyHash("1510129177")-lazyHash("crumblies") + 31)/1000000000) + "/" + ta);
+   return "/" + parseInt((lazyHash("1510129177")-lazyHash("crumblies") + 31)/1000000000) + "/" + ta;
+  } 
+
+  function lazyHash(InString) {
+      var hash = 5381;
+      for(var i = 0; i < InString.length; i++)
+      {
+         hash = hash*33 + InString.charCodeAt(i);
+      }
+      return hash;
+  }
+
+  function setCookie(cname, cvalue, exdays) {
+      var d = new Date();
+      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+      var expires = "expires="+d.toUTCString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
+
+  function getCookie(cname) {
+      var name = cname + "=";
+      var ca = document.cookie.split(';');
+      for(var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') {
+              c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+              return c.substring(name.length, c.length);
+          }
+      }
+      return "";
+  }
+
+  function getParameterByName(name) {
+      name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+      var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+      return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+  }
+
+  /////////////
+  /////////////
+  alert(A_Decode("HNtbgbhnwsujump4hnqawsgbp4wxwshnecqap4azjmhn!!"));
+
+
+  var PreviousFirstAnswer = getCookie("FirstAnswerCookie");
+  if (lazyHash(PreviousFirstAnswer) == 229439158001674)
   {
+    document.getElementById("FirstQ").elements[0].value = PreviousFirstAnswer;
     document.getElementById("demo").innerHTML = "Success!";
     document.getElementById("imgFirstAnswer").src = f("img.jpg");
     document.getElementById("FirstAnswer").style.display = "block";
   }
-  else 
+
+  var SecondAnswer = getParameterByName("sa")
+  if (lazyHash(SecondAnswer) == 7571710509952919)
   {
-    document.getElementById("demo").innerHTML = "Try again :( <br> (Your last try was: \"" + text + "\")";
-    document.getElementById("FirstAnswer").style.display = "none";
+    document.getElementById("FirstQ").elements[0].value = PreviousFirstAnswer;
+    document.getElementById("demo").innerHTML = "Success!";
+    document.getElementById("imgFirstAnswer").src = f("img.jpg");
+    document.getElementById("FirstAnswer").style.display = "block";
+
+    document.getElementById("SecondAnswer").style.display = "block";
+    document.getElementById("DecodedMessage").innerHTML = A_Decode("HNtbgbhnwsujump4hnqawsgbp4wxwshnecqap4azjmhn!!");
   }
-}
-  
-function f(ta) {
- //Cheater!!
- //alert("/" + parseInt((lazyHash("1510129177")-lazyHash("crumblies") + 31)/1000000000) + "/" + ta);
- return "/" + parseInt((lazyHash("1510129177")-lazyHash("crumblies") + 31)/1000000000) + "/" + ta;
-} 
 
-function lazyHash(InString) {
-    var hash = 5381;
-    for(var i = 0; i < InString.length; i++)
-    {
-       hash = hash*33 + InString.charCodeAt(i);
-    }
-    return hash;
-}
-
-function setCookie(cname, cvalue, exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-    var expires = "expires="+d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-
-function getCookie(cname) {
-    var name = cname + "=";
-    var ca = document.cookie.split(';');
-    for(var i = 0; i < ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";
-}
-
-function getParameterByName(name) {
-    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-        results = regex.exec(location.search);
-    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-}
-
-/////////////
-/////////////
-alert(A_Decode("HNtbgbhnwsujump4hnqawsgbp4wxwshnecqap4azjmhn!!"));
-
-
-var PreviousFirstAnswer = getCookie("FirstAnswerCookie");
-if (lazyHash(PreviousFirstAnswer) == 229439158001674)
-{
-  document.getElementById("FirstQ").elements[0].value = PreviousFirstAnswer;
-  document.getElementById("demo").innerHTML = "Success!";
-  document.getElementById("imgFirstAnswer").src = f("img.jpg");
-  document.getElementById("FirstAnswer").style.display = "block";
-}
-
-var SecondAnswer = getParameterByName("sa")
-if (lazyHash(SecondAnswer) == 7571710509952919)
-{
-  document.getElementById("FirstQ").elements[0].value = PreviousFirstAnswer;
-  document.getElementById("demo").innerHTML = "Success!";
-  document.getElementById("imgFirstAnswer").src = f("img.jpg");
-  document.getElementById("FirstAnswer").style.display = "block";
-  
-  document.getElementById("SecondAnswer").style.display = "block";
-  document.getElementById("DecodedMessage").innerHTML = A_Decode("HNtbgbhnwsujump4hnqawsgbp4wxwshnecqap4azjmhn!!");
-}
-
-</script>
-
-<script>
-  function h(ta) {return "./" + lazyHash("Hovercar") + "/" + ta;} 
-  function lazyHash(InString) {
-    var hash = 5381;
-    for(var i = 0; i < InString.length; i++)
-    {
-       hash = hash*33 + InString.charCodeAt(i);
-    }
-    return hash;
-  }
-  document.getElementById("MainScript").src = h("htools.js");
 </script>
