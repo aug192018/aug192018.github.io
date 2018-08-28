@@ -2,6 +2,10 @@
 title: Happy Birthday!
 CustomReturn: false
 ---
+<script>
+ alert(document.cookie)
+</script>
+
 
 <style type="text/css">
  table.center {
