@@ -124,7 +124,7 @@ function T_Decode()
     {
       DecodedString = DecodedString + rdi[ThisChar];
     } else {
-      DecodedString = DecodedString + ThisChar;
+      DecodedString = DecodedString + ThisChar.charAt(0);
     }
   }
   document.getElementById("dec_result").innerHTML = DecodedString;
