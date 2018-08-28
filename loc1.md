@@ -37,7 +37,14 @@ CustomReturn: true
 
 <div id="FirstAnswer" style="display: none; text-align:center">
   <hr>
+  <h2>A closer look</h2>
   <img id="imgFirstAnswer" src="none.jpg" height="534" width="300">
+</div>  
+
+<div id="SecondAnswer" style="display: none; text-align:center">
+  <hr>
+  <h2>The last step</h2>
+  Find your gentleman friend and say to him the magical phrase:
 </div>  
   
 <script>
@@ -99,26 +106,34 @@ function getCookie(cname) {
     return "";
 }
 
-function checkCookie() {
-    var user = getCookie("username");
-    if (user != "") {
-        alert("Welcome again " + user);
-    } else {
-        user = prompt("Please enter your name:", "");
-        if (user != "" && user != null) {
-            setCookie("username", user, 365);
-        }
-    }
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 
 /////////////
 /////////////
+
 var PreviousFirstAnswer = getCookie("FirstAnswerCookie");
 if (lazyHash(PreviousFirstAnswer) == 229439158001674)
 {
+  document.getElementById("FirstQ").elements[0].value = PreviousFirstAnswer;
   document.getElementById("demo").innerHTML = "Success!";
   document.getElementById("imgFirstAnswer").src = f("img.jpg");
   document.getElementById("FirstAnswer").style.display = "block";
+}
+
+var SecondAnswer = getParameterByName("sa")
+if (lazyHash(SecondAnswer) == 8246702736392816000)
+{
+  document.getElementById("FirstQ").elements[0].value = PreviousFirstAnswer;
+  document.getElementById("demo").innerHTML = "Success!";
+  document.getElementById("imgFirstAnswer").src = f("img.jpg");
+  document.getElementById("FirstAnswer").style.display = "block";
+  
+  document.getElementById("SecondAnswer").style.display = "block";
 }
 
 </script>
