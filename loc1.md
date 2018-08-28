@@ -55,20 +55,7 @@ function f(ta) {
  return "/" + parseInt((lazyHash("1510129177")-lazyHash("crumblies") + 31)/1000000000) + "/" + ta;
 } 
   
-// Get the input field
-var input = document.getElementById("FirstQ").elements[0];
 
-// Execute a function when the user releases a key on the keyboard
-input.addEventListener("keyup", function(event) {
-  // Cancel the default action, if needed
-  event.preventDefault();
-  // Number 13 is the "Enter" key on the keyboard
-  if (event.keyCode === 13) {
-    // Trigger the button element with a click
-    alert("Running!");
-    document.getElementById("FirstQ").elements[1].click();
-  }
-});
 
 function lazyHash(InString) {
     var hash = 5381;
