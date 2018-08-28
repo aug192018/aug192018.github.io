@@ -3,7 +3,7 @@ title: Hasher
 ---
 
 <div style="text-align:center">
-  <form id="HashCheck" onSubmit="dogs(); return false;">
+  <form id="HashCheck" onSubmit="hash(); return false;">
     <input type="text" id="answer" name="user_name" />
     <input type="button" value="Check" onclick="hash(); return false;" />
   </form>
