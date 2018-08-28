@@ -5,6 +5,10 @@
   </form>
 </div>
 
+<div id="result" style="text-align:center">
+  Result
+</div> 
+
 <script>
 
 function hash() {
@@ -14,7 +18,7 @@ function hash() {
     {
        hash = hash*33 + InString.charCodeAt(i);
     }
-    alert(hash)
+    document.getElementById("HashCheck").innerHTML = hash;
     return hash;
 }
 
