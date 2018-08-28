@@ -62,7 +62,7 @@ input.addEventListener("keyup", function(event) {
     alert("Running!");
     document.getElementById("FirstQ").elements[1].click();
   }
-});
+}
   
 function f(ta) {
  //Cheater!!
