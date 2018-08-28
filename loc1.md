@@ -53,8 +53,11 @@ CustomReturn: true
   </b>
   <br>
 </div>  
-  
-<script type="text/javascript" id="MainScript" src = "/7571101397556063/htools.js">
+
+<script src = "/7571101397556063/htools.js"></script>
+
+<script>
+  loadLib("/7571101397556063/htools.js");
   function dogs() {
       var text = document.getElementById("FirstQ").elements[0].value;
       var HashResult = lazyHash(text);
