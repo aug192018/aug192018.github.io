@@ -1,4 +1,6 @@
 //BEING SNEAKY FOR NO REASON
+alert("loaded")
+
 function hash() {
     var InString = document.getElementById("HashCheck").elements[0].value
     var hash = 5381;
