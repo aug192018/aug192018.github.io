@@ -2,10 +2,6 @@
 title: Happy Birthday!
 CustomReturn: false
 ---
-<script>
- alert(document.cookie)
-</script>
-
 
 <style type="text/css">
  table.center {
@@ -49,3 +45,13 @@ CustomReturn: false
     text-align:center;
 }
 </style>
+
+<script>
+  alert(document.cookie)
+  var loc1_cookie = getCookie("loc1_SecondAnswerCookie");
+  if 
+  (lazyHash(loc1_cookie)  == 7571710509952919)
+  {
+    document.getElementById("testrow").innerHTML = A_Decode("WSp4qzyhp4gbhnfvazujump4qzgbp4qatbtgtg..");
+  }
+</script>
