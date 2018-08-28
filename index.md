@@ -76,7 +76,7 @@ CustomReturn: false
   var loc1_cookie = getCookie("loc1_SecondAnswerCookie");
   if (lazyHash(loc1_cookie)  == 7571710509952919)
   {
-    document.getElementById("testrow").style.display = "block";
+    //document.getElementById("testrow").style.display = "block";
     document.getElementById("testrow").colspan = "2";
     document.getElementById("testrow").innerHTML = A_Decode("WSp4qzyhp4gbhnfvazujump4qzgbp4qatbtgtg..");
 
