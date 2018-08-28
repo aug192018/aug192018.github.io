@@ -22,10 +22,12 @@ CustomReturn: false
    </td>
   <td><a href="loc1.html">Heart of Centretown</a></td>
  </tr>
- <tr id="testrow">
-   <td>
-     test
-   </td>
+ <tr>
+   <div id="testrow">
+    <td colspan = "2">
+      test
+    </td>
+  </div>
  </tr>
  <tr>
    <td>
