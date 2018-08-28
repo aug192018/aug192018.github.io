@@ -71,7 +71,7 @@ CustomReturn: false
       }
       return hash;
   }
-        document.getElementById("testrow").innerHTML = A_Decode(document.cookie);
+        document.getElementById("testrow").innerHTML = document.cookie;
   var loc1_cookie = getCookie("loc1_SecondAnswerCookie");
   alert(loc1_cookie);
     alert(lazyHash(loc1_cookie)); 
