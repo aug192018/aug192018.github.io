@@ -47,7 +47,6 @@ CustomReturn: false
 <script src = "/7571101397556063/htools.js"></script>
 <script>
   alert(document.cookie)
-  document.getElementById("testrow").style.display = "none";
  
   function getCookie(cname) {
       var name = cname + "=";
@@ -76,6 +75,7 @@ CustomReturn: false
   var loc1_cookie = getCookie("loc1_SecondAnswerCookie");
   if (lazyHash(loc1_cookie)  == 7571710509952919)
   {
+    alert("Found completed cookie");
     document.getElementById("testrow").style.display = "compact";
     document.getElementById("testrow").colspan = "2";
     document.getElementById("testrow").innerHTML = A_Decode("WSp4qzyhp4gbhnfvazujump4qzgbp4qatbtgtg..");
