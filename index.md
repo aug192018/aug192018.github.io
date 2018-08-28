@@ -20,9 +20,9 @@ CustomReturn: false
   <td><a href="loc1.html">Heart of Centretown</a></td>
  </tr>
  <tr>
-  <colgroup span="2" id="testrow">
-    Tweak!
-  </colgroup>
+  <td colspan="2" id="testrow">
+   tweak
+  </td>
  </tr>
  <tr>
    <td>
