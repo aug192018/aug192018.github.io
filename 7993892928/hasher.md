@@ -22,7 +22,7 @@ function hash() {
     {
        hash = hash*33 + InString.charCodeAt(i);
     }
-    document.getElementById("HashCheck").innerHTML = hash;
+    document.getElementById("result").innerHTML = hash;
     return hash;
 }
 
