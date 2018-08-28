@@ -19,10 +19,8 @@ CustomReturn: false
   <td><a href="loc1.html">Heart of Centretown</a></td>
  </tr>
  <tr>
-  <div id="testdiv" style="display: none">
-    <td colspan = "2" id="testrow">
-    </td>
-  </div>
+  <td style="display:none;" colspan = "2" id="testrow">
+  </td>
  </tr>
  <tr>
    <td>
@@ -76,7 +74,7 @@ CustomReturn: false
   var loc1_cookie = getCookie("loc1_SecondAnswerCookie");
   if (lazyHash(loc1_cookie)  == 7571710509952919)
   {
-    document.getElementById("testdiv").style.display = "block"
+    document.getElementById("testrow").style.display = "block"
     document.getElementById("testrow").innerHTML = A_Decode("WSp4qzyhp4gbhnfvazujump4qzgbp4qatbtgtg..");
 
   }
