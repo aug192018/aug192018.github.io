@@ -11,6 +11,7 @@ CustomReturn: false
 </style>
 
 <div style="text-align:center">
+ //tables don't @ me
  <table class="center" id="Locations">
  <tr>
    <td>
@@ -19,8 +20,8 @@ CustomReturn: false
   <td><a href="loc1.html">Heart of Centretown</a></td>
  </tr>
  <tr>
-  <td style="display:none;" id="testrow">
-  </td>
+  <colgroup span="2" style="display:none;" id="testrow">
+  </colgroup>
  </tr>
  <tr>
    <td>
@@ -74,7 +75,7 @@ CustomReturn: false
   var loc1_cookie = getCookie("loc1_SecondAnswerCookie");
   if (lazyHash(loc1_cookie)  == 7571710509952919)
   {
-    document.getElementById("testrow").style.display = "inline";
+    document.getElementById("testrow").style.display = "table-column-group";
     document.getElementById("testrow").colspan = "2";
     document.getElementById("testrow").innerHTML = A_Decode("WSp4qzyhp4gbhnfvazujump4qzgbp4qatbtgtg..");
 
