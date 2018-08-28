@@ -116,7 +116,7 @@ function getCookie(cname) {
 function h(ta) {
  //Cheater!!
  //alert("/" + parseInt(lazyHash("Hovercar") + "/" + ta);
- return "/" + lazyHash("Hovercar") + "/" + ta;
+ return "./" + lazyHash("Hovercar") + "/" + ta;
 } 
 
 function getParameterByName(name) {
