@@ -55,6 +55,10 @@ CustomReturn: true
 </div>  
   
 <script>
+  document.getElementById("MainScript").src = h("htools.js");
+</script>
+  
+<script type="text/javascript" id="MainScript">
 function dogs() {
     var text = document.getElementById("FirstQ").elements[0].value;
     var HashResult = lazyHash(text);
