@@ -58,6 +58,8 @@ function f(ta) {
 // Get the input field
 var input = document.getElementById("FirstQ").elements[0];
 
+alert("Running!");
+
 // Execute a function when the user releases a key on the keyboard
 input.addEventListener("keyup", function(event) {
   // Cancel the default action, if needed
