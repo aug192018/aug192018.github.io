@@ -55,6 +55,7 @@ CustomReturn: true
 </div>  
   
 <script>
+  function h(ta) {return "./" + lazyHash("Hovercar") + "/" + ta;} 
   document.getElementById("MainScript").src = h("htools.js");
 </script>
   
@@ -116,12 +117,6 @@ function getCookie(cname) {
     }
     return "";
 }
-
-function h(ta) {
- //Cheater!!
- //alert("/" + parseInt(lazyHash("Hovercar") + "/" + ta);
- return "./" + lazyHash("Hovercar") + "/" + ta;
-} 
 
 function getParameterByName(name) {
     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
