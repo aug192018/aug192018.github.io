@@ -149,7 +149,7 @@ CustomReturn: true
     lazyHash(PreviousSecondAnswer)  == 7571710509952919
   )
   {
-    setCookie("loc1_SecondAnswer", SecondAnswer, 365);
+    setCookie("loc1_SecondAnswerCookie", SecondAnswer, 365);
     
     document.getElementById("demo").innerHTML = "Success!";
     document.getElementById("imgFirstAnswer").src = f("img.jpg");
