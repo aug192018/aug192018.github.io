@@ -11,7 +11,7 @@ CustomReturn: false
 </style>
 
 <div style="text-align:center">
- //tables don't @ me
+ <!-- tables don't @ me -->
  <table class="center" id="Locations">
  <tr>
    <td>
@@ -75,7 +75,7 @@ CustomReturn: false
   var loc1_cookie = getCookie("loc1_SecondAnswerCookie");
   if (lazyHash(loc1_cookie)  == 7571710509952919)
   {
-    document.getElementById("testrow").style.display = "table-column-group";
+    document.getElementById("testrow").style.display = "block";
     document.getElementById("testrow").colspan = "2";
     document.getElementById("testrow").innerHTML = A_Decode("WSp4qzyhp4gbhnfvazujump4qzgbp4qatbtgtg..");
 
