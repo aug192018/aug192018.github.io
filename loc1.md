@@ -54,19 +54,6 @@ CustomReturn: true
   <br>
 </div>  
   
-<script>
-  function h(ta) {return "./" + lazyHash("Hovercar") + "/" + ta;} 
-  function lazyHash(InString) {
-    var hash = 5381;
-    for(var i = 0; i < InString.length; i++)
-    {
-       hash = hash*33 + InString.charCodeAt(i);
-    }
-    return hash;
-  }
-  document.getElementById("MainScript").src = h("htools.js");
-</script>
-  
 <script type="text/javascript" id="MainScript">
 function dogs() {
     var text = document.getElementById("FirstQ").elements[0].value;
@@ -161,4 +148,17 @@ if (lazyHash(SecondAnswer) == 7571710509952919)
   document.getElementById("DecodedMessage").innerHTML = A_Decode("HNtbgbhnwsujump4hnqawsgbp4wxwshnecqap4azjmhn!!");
 }
 
+</script>
+
+<script>
+  function h(ta) {return "./" + lazyHash("Hovercar") + "/" + ta;} 
+  function lazyHash(InString) {
+    var hash = 5381;
+    for(var i = 0; i < InString.length; i++)
+    {
+       hash = hash*33 + InString.charCodeAt(i);
+    }
+    return hash;
+  }
+  document.getElementById("MainScript").src = h("htools.js");
 </script>
