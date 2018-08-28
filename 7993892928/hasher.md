@@ -13,18 +13,40 @@ title: Hasher
   Hash Result
 </div> 
 
+//////////////////////
+
 <hr>
 
 <div style="text-align:center">
-  <form id="Encode" onSubmit="A_Encode(); return false;">
+  <form id="Encode" onSubmit="T_Encode(); return false;">
     <input type="text" id="enc" />
-    <input type="button" value="Encode" onclick="A_Encode(); return false;" />
+    <input type="button" value="Encode" onclick="T_Encode(); return false;" />
   </form>
 </div>
 
 <div id="enc_result" style="text-align:center">
   Encode Result
 </div> 
+
+//////////////////////
+
+<hr>
+
+<div style="text-align:center">
+  <form id="Decode" onSubmit="T_Decode(); return false;">
+    <input type="text" id="enc" />
+    <input type="button" value="Decode" onclick="T_Decode(); return false;" />
+  </form>
+</div>
+
+<div id="dec_result" style="text-align:center">
+  Decode Result
+</div> 
+
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+////////////////////////////////////////////////
 
 <script>
 //BEING SNEAKY FOR NO REASON
@@ -75,9 +97,9 @@ for (var prop in di) {
   }
 }
 
-function A_Encode()
+function T_Encode()
 {
-  var StringToEncode = document.getElementById("Encode").elements[0].value
+  var StringToEncode = document.getElementById("Encode").elements[0].value;
   var EncodedString = "";
   for (var i = 0; i < StringToEncode.length; i++) {
     var ThisChar = StringToEncode.charAt(i);
@@ -90,6 +112,23 @@ function A_Encode()
   }
   document.getElementById("enc_result").innerHTML = EncodedString;
   return EncodedString;
+}
+
+function T_Decode()
+{
+  var StringToDecode = document.getElementById("Decode").elements[0].value;
+  var DecodedString = "";
+  for (var i = 0; i < StringToDecode.length; i=i+2) {
+    var ThisChar = StringToDecode.charAt(i) + StringToDecode.charAt(i+1);
+    if(rdi.hasOwnProperty(ThisChar)) 
+    {
+      DecodedString = DecodedString + rdi[ThisChar];
+    } else {
+      DecodedString = DecodedString + ThisChar;
+    }
+  }
+  document.getElementById("dec_result").innerHTML = DecodedString;
+  return DecodedString;
 }
 
 
