@@ -23,7 +23,9 @@ CustomReturn: false
   <td><a href="loc1.html">Heart of Centretown</a></td>
  </tr>
  <tr id="testrow">
-  test
+   <td>
+     test
+   </td>
  </tr>
  <tr>
    <td>
