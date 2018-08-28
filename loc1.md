@@ -122,8 +122,8 @@ function getParameterByName(name) {
 
 /////////////
 /////////////
-//alert(A_Decode("HNtbgbhnwsujump4hnqawsgbp4wxwshnecqap4azjmhn!!"));
-alert(h("htools.js"));
+alert(A_Decode("HNtbgbhnwsujump4hnqawsgbp4wxwshnecqap4azjmhn!!"));
+
 
 var PreviousFirstAnswer = getCookie("FirstAnswerCookie");
 if (lazyHash(PreviousFirstAnswer) == 229439158001674)
