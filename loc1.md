@@ -37,17 +37,21 @@ CustomReturn: true
 
 <div id="FirstAnswer" style="display: none; text-align:center">
   <hr>
+  <br>
   <h2>A closer look</h2>
   <img id="imgFirstAnswer" src="none.jpg" height="534" width="300">
+  <br>
 </div>  
 
 <div id="SecondAnswer" style="display: none; text-align:center">
   <hr>
+  <br>
   <h2>The last step</h2>
   Find your gentleman friend and say to him the magical phrase:
   <b>
   <p id="DecodedMessage" style="color:rgb(43, 255, 195)"></p>
   </b>
+  <br>
 </div>  
   
 <script>
