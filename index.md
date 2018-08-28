@@ -19,11 +19,9 @@ CustomReturn: false
   <td><a href="loc1.html">Heart of Centretown</a></td>
  </tr>
  <tr>
-   <div id="testrow">
-    <td colspan = "2">
-      test
-    </td>
-  </div>
+  <td colspan = "2" id="testrow">
+    test
+  </td>
  </tr>
  <tr>
    <td>
@@ -46,6 +44,7 @@ CustomReturn: false
 }
 </style>
 
+<script src = "/7571101397556063/htools.js"></script>
 <script>
   alert(document.cookie)
  
