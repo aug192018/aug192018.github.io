@@ -46,7 +46,7 @@ CustomReturn: true
   <h2>The last step</h2>
   Find your gentleman friend and say to him the magical phrase:
   <b>
-  <p id="DecodedMessage" style="color:rgb(223, 226, 36)"></p>
+  <p id="DecodedMessage" style="color:rgb(195, 198, 0)"></p>
   </b>
 </div>  
   
@@ -144,7 +144,7 @@ if (lazyHash(SecondAnswer) == 7571710509952919)
   document.getElementById("FirstAnswer").style.display = "block";
   
   document.getElementById("SecondAnswer").style.display = "block";
-  document.getElementById("DecodedMessage").innerHTML = "" +  "test" + "</font></b></h2>"
+  document.getElementById("DecodedMessage").innerHTML = "test"
 }
 
 </script>
