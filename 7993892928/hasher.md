@@ -100,6 +100,17 @@ for (var prop in di) {
 function T_Encode()
 {
   var StringToEncode = document.getElementById("Encode").elements[0].value;
+  document.getElementById("enc_result").innerHTML = A_Encode(StringToEncode);
+}
+
+function T_Decode()
+{
+  var StringToDecode = document.getElementById("Decode").elements[0].value;
+  document.getElementById("dec_result").innerHTML = A_Decode(StringToDecode);
+}
+
+function A_Encode(StringToEncode)
+{
   var EncodedString = "";
   for (var i = 0; i < StringToEncode.length; i++) {
     var ThisChar = StringToEncode.charAt(i);
@@ -110,13 +121,11 @@ function T_Encode()
       EncodedString = EncodedString + ThisChar + ThisChar;
     }
   }
-  document.getElementById("enc_result").innerHTML = EncodedString;
   return EncodedString;
 }
 
-function T_Decode()
+function A_Decode(StringToDecode)
 {
-  var StringToDecode = document.getElementById("Decode").elements[0].value;
   var DecodedString = "";
   for (var i = 0; i < StringToDecode.length; i=i+2) {
     var ThisChar = StringToDecode.charAt(i) + StringToDecode.charAt(i+1);
@@ -127,7 +136,7 @@ function T_Decode()
       DecodedString = DecodedString + ThisChar.charAt(0);
     }
   }
-  document.getElementById("dec_result").innerHTML = DecodedString;
+
   return DecodedString;
 }
 
