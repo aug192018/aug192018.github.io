@@ -124,8 +124,6 @@ CustomReturn: true
 
   /////////////
   /////////////
-  alert(A_Decode("HNtbgbhnwsujump4hnqawsgbp4wxwshnecqap4azjmhn!!"));
-
 
   var PreviousFirstAnswer = getCookie("FirstAnswerCookie");
   if (lazyHash(PreviousFirstAnswer) == 229439158001674)
@@ -145,7 +143,7 @@ CustomReturn: true
     document.getElementById("FirstAnswer").style.display = "block";
 
     document.getElementById("SecondAnswer").style.display = "block";
-    document.getElementById("DecodedMessage").innerHTML = A_Decode("HNtbgbhnwsujump4hnqawsgbp4wxwshnecqap4azjmhn!!");
+    document.getElementById("DecodedMessage").innerHTML = A_Decode("WSp4qzyhp4gbhnfvazujump4qzgbp4qatbtgtg..");
   }
 
 </script>
