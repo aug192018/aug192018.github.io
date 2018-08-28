@@ -48,9 +48,33 @@ CustomReturn: false
 
 <script>
   alert(document.cookie)
+ 
+  function getCookie(cname) {
+      var name = cname + "=";
+      var ca = document.cookie.split(';');
+      for(var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') {
+              c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+              return c.substring(name.length, c.length);
+          }
+      }
+      return "";
+  }
+  
+  function lazyHash(InString) {
+      var hash = 5381;
+      for(var i = 0; i < InString.length; i++)
+      {
+         hash = hash*33 + InString.charCodeAt(i);
+      }
+      return hash;
+  }
+ 
   var loc1_cookie = getCookie("loc1_SecondAnswerCookie");
-  if 
-  (lazyHash(loc1_cookie)  == 7571710509952919)
+  if (lazyHash(loc1_cookie)  == 7571710509952919)
   {
     document.getElementById("testrow").innerHTML = A_Decode("WSp4qzyhp4gbhnfvazujump4qzgbp4qatbtgtg..");
   }
