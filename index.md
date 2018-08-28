@@ -20,7 +20,7 @@ CustomReturn: false
   <td><a href="loc1.html">Heart of Centretown</a></td>
  </tr>
  <tr>
-  <td colspan="2" style="display: none;" id="testrow">
+  <td colspan="2" id="testrow">
   </td>
  </tr>
  <tr>
@@ -47,6 +47,7 @@ CustomReturn: false
 <script src = "/7571101397556063/htools.js"></script>
 <script>
   alert(document.cookie)
+  document.getElementById("testrow").style.display = "none";
  
   function getCookie(cname) {
       var name = cname + "=";
@@ -75,7 +76,7 @@ CustomReturn: false
   var loc1_cookie = getCookie("loc1_SecondAnswerCookie");
   if (lazyHash(loc1_cookie)  == 7571710509952919)
   {
-    //document.getElementById("testrow").style.display = "table-cell";
+    //document.getElementById("testrow").style.display = "initial";
     document.getElementById("testrow").colspan = "2";
     document.getElementById("testrow").innerHTML = A_Decode("WSp4qzyhp4gbhnfvazujump4qzgbp4qatbtgtg..");
 
