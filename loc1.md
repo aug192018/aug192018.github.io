@@ -54,8 +54,6 @@ function f(ta) {
  //alert("/" + parseInt((lazyHash("1510129177")-lazyHash("crumblies") + 31)/1000000000) + "/" + ta);
  return "/" + parseInt((lazyHash("1510129177")-lazyHash("crumblies") + 31)/1000000000) + "/" + ta;
 } 
-  
-
 
 function lazyHash(InString) {
     var hash = 5381;
