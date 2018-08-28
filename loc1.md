@@ -63,7 +63,7 @@ CustomReturn: true
       var HashResult = lazyHash(text);
       //text = text + "<br>" + HashResult;
 
-      setCookie("FirstAnswerCookie", text, 365)
+      setCookie("loc1_FirstAnswerCookie", text, 365)
       //document.getElementById("demo").innerHTML = text;
 
     if (HashResult == 229439158001674) 
@@ -75,7 +75,7 @@ CustomReturn: true
     else if (HashResult == 210726503048)
     {
       alert("Reset!");
-      setCookie("SecondAnswerCookie", "", 365);
+      setCookie("loc1_SecondAnswerCookie", "", 365);
     }
     else 
     {
@@ -132,7 +132,7 @@ CustomReturn: true
   /////////////
   /////////////
 
-  var PreviousFirstAnswer = getCookie("FirstAnswerCookie");
+  var PreviousFirstAnswer = getCookie("loc1_FirstAnswerCookie");
   if (lazyHash(PreviousFirstAnswer) == 229439158001674)
   {
     document.getElementById("FirstQ").elements[0].value = PreviousFirstAnswer;
@@ -142,14 +142,14 @@ CustomReturn: true
   }
 
   var SecondAnswer = getParameterByName("sa")
-  var PreviousSecondAnswer = getCookie("SecondAnswerCookie");
+  var PreviousSecondAnswer = getCookie("loc1_SecondAnswerCookie");
   if 
   (  
     lazyHash(SecondAnswer)          == 7571710509952919 ||
     lazyHash(PreviousSecondAnswer)  == 7571710509952919
   )
   {
-    setCookie("SecondAnswerCookie", SecondAnswer, 365);
+    setCookie("loc1_SecondAnswer", SecondAnswer, 365);
     
     document.getElementById("demo").innerHTML = "Success!";
     document.getElementById("imgFirstAnswer").src = f("img.jpg");
