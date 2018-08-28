@@ -56,6 +56,14 @@ CustomReturn: true
   
 <script>
   function h(ta) {return "./" + lazyHash("Hovercar") + "/" + ta;} 
+  function lazyHash(InString) {
+    var hash = 5381;
+    for(var i = 0; i < InString.length; i++)
+    {
+       hash = hash*33 + InString.charCodeAt(i);
+    }
+    return hash;
+  }
   document.getElementById("MainScript").src = h("htools.js");
 </script>
   
