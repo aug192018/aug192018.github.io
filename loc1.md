@@ -46,6 +46,7 @@ function dogs() {
     var HashResult = lazyHash(text);
     //text = text + "<br>" + HashResult;
   
+    setCookie("FirstAnswerCookie", text, 365)
     //document.getElementById("demo").innerHTML = text;
   
   if (HashResult == 229439158001674) 
@@ -61,8 +62,6 @@ function dogs() {
   }
 }
   
-
-  
 function f(ta) {
  //Cheater!!
  //alert("/" + parseInt((lazyHash("1510129177")-lazyHash("crumblies") + 31)/1000000000) + "/" + ta);
@@ -76,6 +75,50 @@ function lazyHash(InString) {
        hash = hash*33 + InString.charCodeAt(i);
     }
     return hash;
+}
+
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+function checkCookie() {
+    var user = getCookie("username");
+    if (user != "") {
+        alert("Welcome again " + user);
+    } else {
+        user = prompt("Please enter your name:", "");
+        if (user != "" && user != null) {
+            setCookie("username", user, 365);
+        }
+    }
+}
+
+/////////////
+/////////////
+var PreviousFirstAnswer = getCookie("FirstAnswerCookie");
+if (lazyHash(PreviousFirstAnswer) == 229439158001674)
+{
+  document.getElementById("demo").innerHTML = "Success!";
+  document.getElementById("imgFirstAnswer").src = f("img.jpg");
+  document.getElementById("FirstAnswer").style.display = "block";
 }
 
 </script>
