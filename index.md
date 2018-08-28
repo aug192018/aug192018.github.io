@@ -21,7 +21,6 @@ CustomReturn: false
  </tr>
  <tr>
   <td colspan="2" id="testrow">
-   tweak
   </td>
  </tr>
  <tr>
