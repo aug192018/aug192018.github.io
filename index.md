@@ -71,13 +71,13 @@ CustomReturn: false
       }
       return hash;
   }
-     document.getElementById("testrow").innerHTML = A_Decode("WSp4qzyhp4gbhnfvazujump4qzgbp4qatbtgtg..");
+        document.getElementById("testrow").innerHTML = A_Decode(document.cookie);
   var loc1_cookie = getCookie("loc1_SecondAnswerCookie");
   alert(loc1_cookie);
     alert(lazyHash(loc1_cookie)); 
   if (lazyHash(loc1_cookie)  == 7571710509952919)
   {
-    //document.getElementById("testrow").innerHTML = A_Decode("WSp4qzyhp4gbhnfvazujump4qzgbp4qatbtgtg..");
-        document.getElementById("testrow").innerHTML = A_Decode(document.cookie);
+    document.getElementById("testrow").innerHTML = A_Decode("WSp4qzyhp4gbhnfvazujump4qzgbp4qatbtgtg..");
+
   }
 </script>
