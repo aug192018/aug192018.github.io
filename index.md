@@ -124,10 +124,9 @@ CustomReturn: false
   }
   
   function CheckForFinished(Cookie, CheckValue, TableRow, EncodedMessage) {
-     var loc_cookie = getCookie("loc1_SecondAnswerCookie");
+     var loc_cookie = getCookie(Cookie);
      if (lazyHash(loc_cookie)  == CheckValue)
      {
-       alert(TableRow);
        document.getElementById(TableRow).style.display = "table-cell";
        document.getElementById(TableRow).colspan = "2";
        document.getElementById(TableRow).innerHTML = A_Decode(EncodedMessage);
