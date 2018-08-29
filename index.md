@@ -76,7 +76,7 @@ CustomReturn: false
   if (lazyHash(loc1_cookie)  == 7571710509952919)
   {
     alert("Found completed cookie");
-    document.getElementById("testrow").style.display = "compact";
+    document.getElementById("testrow").style.display = "table-cell";
     document.getElementById("testrow").colspan = "2";
     document.getElementById("testrow").innerHTML = A_Decode("WSp4qzyhp4gbhnfvazujump4qzgbp4qatbtgtg..");
 
