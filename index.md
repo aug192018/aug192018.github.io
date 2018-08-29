@@ -136,5 +136,5 @@ CustomReturn: false
   CheckForFinished("loc3_SecondAnswerCookie", 8246959407606339000, "p3done", "YHtbgbgbqzumtbp4##33");
   CheckForFinished("loc4_SecondAnswerCookie", 8246957399872469000, "p4done", "YHtbgbgbqzumtbp4##44");
   CheckForFinished("loc5_SecondAnswerCookie", 8247122917860826000, "p5done", "YHtbgbgbqzumtbp4##55");
-  CheckForFinished("loc6_SecondAnswerCookie", 8245356102421490000, "p6done", "YHtbgbgbqzumtbp4##66");
+  CheckForFinished("loc6_SecondAnswerCookie", 8244727662634403000, "p6done", "YHtbgbgbqzumtbp4##66");
 </script>
