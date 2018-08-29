@@ -127,7 +127,7 @@ CustomReturn: false
      var loc_cookie = getCookie("loc1_SecondAnswerCookie");
      if (lazyHash(loc_cookie)  == CheckValue)
      {
-       alert(loc_cookie);
+       alert(TableRow);
        document.getElementById(TableRow).style.display = "table-cell";
        document.getElementById(TableRow).colspan = "2";
        document.getElementById(TableRow).innerHTML = A_Decode(EncodedMessage);
