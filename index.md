@@ -134,7 +134,7 @@ CustomReturn: false
   CheckForFinished("loc1_SecondAnswerCookie", 7571710509952919,    "p1done", "QAtbtgtgaz,,p4yhrrp4ujqzyhtbp4wsgbp4EDqzrryhwstb..");
   CheckForFinished("loc2_SecondAnswerCookie", 8245356102421490000, "p2done", "WS''yhp4hnqaazjmumqahnynjmtgp4qzujrvp4umtbujtbfvazjmgb");
   CheckForFinished("loc3_SecondAnswerCookie", 8246959407606339000, "p3done", "WS''yhp4ectgtbqqtbfvp4qzgbp4qatbtgtg");
-  CheckForFinished("loc4_SecondAnswerCookie", 8246957399872469000, "p4done", "🍑🍑");
+  CheckForFinished("loc4_SecondAnswerCookie", 8246957399872469000, "p4done", "🍑");
   CheckForFinished("loc5_SecondAnswerCookie", 8247122917860826000, "p5done", "YHtbgbgbqzumtbp4##55");
   CheckForFinished("loc6_SecondAnswerCookie", 8244727662634403000, "p6done", "YHtbgbgbqzumtbp4##66");
 </script>
