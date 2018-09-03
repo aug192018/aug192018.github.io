@@ -128,6 +128,7 @@ CustomReturn: false
        document.getElementById(TableRow).style.display = "table-cell";
        document.getElementById(TableRow).colspan = "2";
        document.getElementById(TableRow).innerHTML = A_Decode(EncodedMessage);
+       if (EncodedMessage == "🍑") {document.getElementById(TableRow).innerHTML = "🍑";}
      }
   }
 
