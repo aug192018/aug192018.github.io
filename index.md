@@ -65,9 +65,10 @@ CustomReturn: false
  <!-- Location 5 -->
  <tr>
    <td>
-     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.4191206256223!2d-75.71378168476576!3d45.42105197910048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDI1JzE1LjgiTiA3NcKwNDInNDEuNyJX!5e0!3m2!1sen!2sca!4v1535347993456" width="150" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5600.058970304034!2d-75.69556477394848!3d45.42890696640194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce050261d6c9c7%3A0xc02283c07a3b83a2!2sByward+Market%2C+Ottawa%2C+ON!5e0!3m2!1sen!2sca!4v1535962820422" width="150" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
    </td>
-   <td><a href="p5.html">Location 5</a></td>
+   //<td><a href="p5.html">Location 5</a></td>
+  <td>????????</td>
  </tr>
  <tr>
   <td colspan="2" style="display: none;" id="p5done">
@@ -77,9 +78,10 @@ CustomReturn: false
   <!-- Location 6 -->
  <tr style="border-bottom: thin solid">
    <td>
-     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.4191206256223!2d-75.71378168476576!3d45.42105197910048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDI1JzE1LjgiTiA3NcKwNDInNDEuNyJX!5e0!3m2!1sen!2sca!4v1535347993456" width="150" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4709.771942272401!2d-75.7154249762528!3d45.4204868323815!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0459a4bf3019%3A0xe68447b5e699b78!2sVictoria+Island%2C+Ottawa%2C+ON!5e0!3m2!1sen!2sca!4v1535962783978" width="150" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
    </td>
-   <td><a href="p6.html">Location 6</a></td>
+   //<td><a href="p6.html">Location 6</a></td>
+  <td>????????</td>
  </tr>
  <tr>
   <td colspan="2" style="display: none;" id="p6done">
