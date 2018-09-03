@@ -131,7 +131,7 @@ CustomReturn: false
      }
   }
 
-  CheckForFinished("loc1_SecondAnswerCookie", 7571710509952919,    "p1done", "QAtbtgtgaz,,p4yhrrp4ujqzyhtbp4wsgbp4EDqzrryhwstb..p4HNazazhnp4hnazazhnp4hnazazhn,,p4rvazazsxqzrvazazp4wxazazumqztgazaz!!");
+  CheckForFinished("loc1_SecondAnswerCookie", 7571710509952919,    "p1done", "QAtbtgtgaz,,p4yhrrp4ujqzyhtbp4wsgbp4EDqzrryhwstb..");
   CheckForFinished("loc2_SecondAnswerCookie", 8245356102421490000, "p2done", "WS''yhp4hnqaazjmumqahnynjmtgp4qzujrvp4umtbujtbfvazjmgb");
   CheckForFinished("loc3_SecondAnswerCookie", 8246959407606339000, "p3done", "WS''yhp4ectgtbqqtbfvp4qzgbp4qatbtgtg");
   CheckForFinished("loc4_SecondAnswerCookie", 8246957399872469000, "p4done", "🍑🍑");
