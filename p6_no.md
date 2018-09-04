@@ -5,7 +5,7 @@ CustomReturn: true
 
 <div style="text-align:center">
   <p align="center">
-    Along Wellington, well before the bridge to Victoria Island, there's a walking path that takes you down below to the bike paths. Walking away from downtown, the path is on your right. If you've made it to the large three-way intersection, you've gone much too far. You should see an underpass under that runs under Wellington St. Below that is another underpass. You're interested in the plaza near the first underpass, immediately below street level
+    Along Wellington, well before the bridge to Victoria Island, there's a walking path that takes you down below to the bike lanes. Walking away from downtown, the way down is on your right. If you've made it to the large three-way intersection, you've gone much too far. You should see an underpass under that runs under Wellington St. Below that is another underpass. You're interested in the plaza near the first underpass, immediately below street level.
   </p>
 </div>
 
