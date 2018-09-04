@@ -67,7 +67,7 @@ CustomReturn: false
    <td>
    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5600.058970304034!2d-75.69556477394848!3d45.42890696640194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce050261d6c9c7%3A0xc02283c07a3b83a2!2sByward+Market%2C+Ottawa%2C+ON!5e0!3m2!1sen!2sca!4v1535962820422" width="150" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
    </td>
-  <td>????????</td>
+  <td><a href="p5.html">Major's Hill Park</a></td>
  </tr>
  <tr>
   <td colspan="2" style="display: none;" id="p5done">
@@ -136,6 +136,6 @@ CustomReturn: false
   CheckForFinished("loc2_SecondAnswerCookie", 8245356102421490000, "p2done", "WS''yhp4hnqaazjmumqahnynjmtgp4qzujrvp4umtbujtbfvazjmgb");
   CheckForFinished("loc3_SecondAnswerCookie", 8246959407606339000, "p3done", "WS''yhp4ectgtbqqtbfvp4qzgbp4qatbtgtg");
   CheckForFinished("loc4_SecondAnswerCookie", 8246957399872469000, "p4done", "🍑");
-  CheckForFinished("loc5_SecondAnswerCookie", 8247122917860826000, "p5done", "YHtbgbgbqzumtbp4##55");
-  CheckForFinished("loc6_SecondAnswerCookie", 8244727662634403000, "p6done", "YHtbgbgbqzumtbp4##66");
+  CheckForFinished("loc5_SecondAnswerCookie", 8247122917860826000, "p5done", "WSp4qaqzqqtbp4qzujp4tbeehnfvqzazfvrvwsujqzfvwstgrrp4wwqzfvyhp4qatbqzfvhn..");
+  CheckForFinished("loc6_SecondAnswerCookie", 8244727662634403000, "p6done", "WS''qqtbp4ecazyhtbp4qzp4tgazujump4wwqzrrp4qzujrvp4qaqzqqtbp4yhqzujrrp4sxtgqzectbgbp4gbhnwstgtgp4hnazp4umaz");
 </script>
