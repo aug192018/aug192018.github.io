@@ -134,7 +134,7 @@ CustomReturn: false
        document.getElementById(TableRow).style.display = "table-cell";
        document.getElementById(TableRow).colspan = "2";
        document.getElementById(TableRow).innerHTML = A_Decode(EncodedMessage);
-       if (EncodedMessage == "🍑") {document.getElementById(TableRow).innerHTML = "🍑";}
+       if (EncodedMessage == "🍑") {document.getElementById(TableRow).innerHTML = "(🍑)";}
        completed++;
      }
   }
@@ -149,6 +149,6 @@ CustomReturn: false
   if (completed == 6){
        document.getElementById("alldone").style.display = "table-cell";
        document.getElementById("alldone").colspan = "2";
-       document.getElementById("alldone").innerHTML = A_Decode("qzujrvp4WSp4gbqaazjmtgrvp4ujtbqqtbfvp4tbqqtbfvp4ynazfvumtbhnp4wshn..") + "❤️";
+       document.getElementById("alldone").innerHTML = A_Decode("......qzujrvp4WSp4gbqaazjmtgrvp4ujtbqqtbfvp4tbqqtbfvp4ynazfvumtbhnp4wshn..") + "❤️";
   }
 </script>
