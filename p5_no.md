@@ -75,7 +75,7 @@ CustomReturn: true
     {
       document.getElementById("demo").innerHTML = "Success!";
       document.getElementById("imgFirstAnswer").src = f(img_fa);
-      document.getElementById("fa_txt").innerHTML = A_Decode("QZp4hnqztgtgp4yhazujjmyhtbujhnp4gbwshngbp4qzhnp4azujtbp4azynp4hnqatbp4tbrvumtbgbp4azynp4hnqatbp4ynwstbtgrv..p4WSujqqtbgbhnwsumqzhntbp4hnqatbp4wxqzecrfp4gbwsrvtbp4azynp4hnqatbp4wsujgbhnqztgtgqzhnwsazuj,,p4gbsxtbecwsynwsecqztgtgrrp4hnqatbp4ecjmhnqzwwqzrrgbp4hnqaqzhnp4fvjmujp4qqtbfvhnwsecqztgtgrrp4jmsxp4qzujrvp4rvazwwujp4azujp4tbwshnqatbfvp4gbwsrvtbp4azynp4hnqatbp4ectbujhnfvqztgp4sxwstgtgqzfv..");
+      document.getElementById("fa_txt").innerHTML = A_Decode("QZp4hnqztgtgp4yhazujjmyhtbujhnp4gbwshngbp4qzhnp4azujtbp4azynp4hnqatbp4tbrvumtbgbp4azynp4hnqatbp4ynwstbtgrv..p4WSujqqtbgbhnwsumqzhntbp4wshngbp4wxqzecrfp4gbwsrvtb,,p4gbsxtbecwsynwsecqztgtgrrp4hnqatbp4ecjmhnqzwwqzrrgbp4hnqaqzhnp4fvjmujp4qqtbfvhnwsecqztgtgrrp4jmsxp4qzujrvp4rvazwwujp4tbwshnqatbfvp4gbwsrvtbp4azynp4hnqatbp4ectbujhnfvqztgp4sxwstgtgqzfv..");
       document.getElementById("FirstAnswer").style.display = "block";
     }
     else if (HashResult == 210726503048)
@@ -144,7 +144,7 @@ CustomReturn: true
     document.getElementById("FirstQ").elements[0].value = PreviousFirstAnswer;
     document.getElementById("demo").innerHTML = "Success!";
     document.getElementById("imgFirstAnswer").src = f(img_fa);
-    document.getElementById("fa_txt").innerHTML = A_Decode("QZp4hnqztgtgp4yhazujjmyhtbujhnp4gbwshngbp4qzhnp4azujtbp4azynp4hnqatbp4tbrvumtbgbp4azynp4hnqatbp4ynwstbtgrv..p4WSujqqtbgbhnwsumqzhntbp4hnqatbp4wxqzecrfp4gbwsrvtbp4azynp4hnqatbp4wsujgbhnqztgtgqzhnwsazuj,,p4gbsxtbecwsynwsecqztgtgrrp4hnqatbp4ecjmhnqzwwqzrrgbp4hnqaqzhnp4fvjmujp4qqtbfvhnwsecqztgtgrrp4jmsxp4qzujrvp4rvazwwujp4azujp4tbwshnqatbfvp4gbwsrvtbp4azynp4hnqatbp4ectbujhnfvqztgp4sxwstgtgqzfv..");
+    document.getElementById("fa_txt").innerHTML = A_Decode("QZp4hnqztgtgp4yhazujjmyhtbujhnp4gbwshngbp4qzhnp4azujtbp4azynp4hnqatbp4tbrvumtbgbp4azynp4hnqatbp4ynwstbtgrv..p4WSujqqtbgbhnwsumqzhntbp4wshngbp4wxqzecrfp4gbwsrvtb,,p4gbsxtbecwsynwsecqztgtgrrp4hnqatbp4ecjmhnqzwwqzrrgbp4hnqaqzhnp4fvjmujp4qqtbfvhnwsecqztgtgrrp4jmsxp4qzujrvp4rvazwwujp4tbwshnqatbfvp4gbwsrvtbp4azynp4hnqatbp4ectbujhnfvqztgp4sxwstgtgqzfv..");
     document.getElementById("FirstAnswer").style.display = "block";
   }
 
@@ -158,7 +158,7 @@ CustomReturn: true
   function LoadAll(){
     document.getElementById("demo").innerHTML = "Success!";
     document.getElementById("imgFirstAnswer").src = f(img_fa);
-    document.getElementById("fa_txt").innerHTML = A_Decode("QZp4hnqztgtgp4yhazujjmyhtbujhnp4gbwshngbp4qzhnp4azujtbp4azynp4hnqatbp4tbrvumtbgbp4azynp4hnqatbp4ynwstbtgrv..p4WSujqqtbgbhnwsumqzhntbp4hnqatbp4wxqzecrfp4gbwsrvtbp4azynp4hnqatbp4wsujgbhnqztgtgqzhnwsazuj,,p4gbsxtbecwsynwsecqztgtgrrp4hnqatbp4ecjmhnqzwwqzrrgbp4hnqaqzhnp4fvjmujp4qqtbfvhnwsecqztgtgrrp4jmsxp4qzujrvp4rvazwwujp4azujp4tbwshnqatbfvp4gbwsrvtbp4azynp4hnqatbp4ectbujhnfvqztgp4sxwstgtgqzfv..");
+    document.getElementById("fa_txt").innerHTML = A_Decode("QZp4hnqztgtgp4yhazujjmyhtbujhnp4gbwshngbp4qzhnp4azujtbp4azynp4hnqatbp4tbrvumtbgbp4azynp4hnqatbp4ynwstbtgrv..p4WSujqqtbgbhnwsumqzhntbp4wshngbp4wxqzecrfp4gbwsrvtb,,p4gbsxtbecwsynwsecqztgtgrrp4hnqatbp4ecjmhnqzwwqzrrgbp4hnqaqzhnp4fvjmujp4qqtbfvhnwsecqztgtgrrp4jmsxp4qzujrvp4rvazwwujp4tbwshnqatbfvp4gbwsrvtbp4azynp4hnqatbp4ectbujhnfvqztgp4sxwstgtgqzfv..");
     document.getElementById("FirstAnswer").style.display = "block";
 
     document.getElementById("SecondAnswer").style.display = "block";
