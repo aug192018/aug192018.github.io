@@ -1,16 +1,16 @@
 ---
-title: Heart of Centretown
+title: Major's Hill Park
 CustomReturn: true
 ---
 
 <div style="text-align:center">
   <p align="center">
-    Downtown, in a planter on Kent between Albert and Slater.
+    Behind the Chateau, near the middle of the park on the hill. 
   </p>
 </div>
 
 <div style="text-align:center">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4710.025622366988!2d-75.70739115844336!3d45.41744562661835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDI1JzAzLjMiTiA3NcKwNDInMTQuMiJX!5e0!3m2!1sen!2sca!4v1535345331391" width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1400.0453489382712!2d-75.69858669943144!3d45.42767299815274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDI1JzM5LjYiTiA3NcKwNDEnNTIuNiJX!5e0!3m2!1sen!2sca!4v1536025410533" width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
   
 <hr>
@@ -19,7 +19,7 @@ CustomReturn: true
 <div style="text-align:center">
   <p align="center">
     <h2>When you've arrived...</h2>
-    Here we are! What's the name of the store across the street?
+    Looking southeast over the trees from the middle of the park's largest field, you should see some large writing on the western side of a faraway hotel. What does it say (again, in ALL CAPS)?
   </p>
 </div>
 <br>
@@ -40,6 +40,7 @@ CustomReturn: true
   <br>
   <h2>A closer look</h2>
   <img id="imgFirstAnswer" src="none.jpg" height="534" width="300">
+  <p id="fa_txt"></p>
   <br>
 </div>  
 
@@ -58,6 +59,10 @@ CustomReturn: true
 <script src = "/7571101397556063/htools.js"></script>
 
 <script>
+  var img_fa  = "IMAG0215.jpg"
+  var h_fa    = 6952878825663
+  var h_sa    = 8247122917860826000
+  
   function dogs() {
       var text = document.getElementById("FirstQ").elements[0].value;
       var HashResult = lazyHash(text);
@@ -66,10 +71,11 @@ CustomReturn: true
       setCookie("loc5_FirstAnswerCookie", text, 365)
       //document.getElementById("demo").innerHTML = text;
 
-    if (HashResult == 229439158001674) 
+    if (HashResult == h_fa) 
     {
       document.getElementById("demo").innerHTML = "Success!";
-      document.getElementById("imgFirstAnswer").src = f("img.jpg");
+      document.getElementById("imgFirstAnswer").src = f(img_fa);
+      document.getElementById("fa_txt").innerHTML = A_Decode("QZp4hnqztgtgp4yhazujjmyhtbujhnp4gbwshngbp4qzhnp4azujtbp4azynp4hnqatbp4tbrvumtbgbp4azynp4hnqatbp4ynwstbtgrv..p4WSujqqtbgbhnwsumqzhntbp4hnqatbp4wxqzecrfp4gbwsrvtbp4azynp4hnqatbp4wsujgbhnqztgtgqzhnwsazuj,,p4gbsxtbecwsynwsecqztgtgrrp4hnqatbp4ecjmhnqzwwqzrrgbp4hnqaqzhnp4fvjmujp4qqtbfvhnwsecqztgtgrrp4jmsxp4qzujrvp4rvazwwujp4azujp4tbwshnqatbfvp4gbwsrvtbp4azynp4hnqatbp4ectbujhnfvqztgp4sxwstgtgqzfv..");
       document.getElementById("FirstAnswer").style.display = "block";
     }
     else if (HashResult == 210726503048)
@@ -133,29 +139,30 @@ CustomReturn: true
   /////////////
 
   var PreviousFirstAnswer = getCookie("loc5_FirstAnswerCookie");
-  if (lazyHash(PreviousFirstAnswer) == 229439158001674)
+  if (lazyHash(PreviousFirstAnswer) == h_fa)
   {
     document.getElementById("FirstQ").elements[0].value = PreviousFirstAnswer;
     document.getElementById("demo").innerHTML = "Success!";
-    document.getElementById("imgFirstAnswer").src = f("img.jpg");
+    document.getElementById("imgFirstAnswer").src = f(img_fa);
+    document.getElementById("fa_txt").innerHTML = A_Decode("QZp4hnqztgtgp4yhazujjmyhtbujhnp4gbwshngbp4qzhnp4azujtbp4azynp4hnqatbp4tbrvumtbgbp4azynp4hnqatbp4ynwstbtgrv..p4WSujqqtbgbhnwsumqzhntbp4hnqatbp4wxqzecrfp4gbwsrvtbp4azynp4hnqatbp4wsujgbhnqztgtgqzhnwsazuj,,p4gbsxtbecwsynwsecqztgtgrrp4hnqatbp4ecjmhnqzwwqzrrgbp4hnqaqzhnp4fvjmujp4qqtbfvhnwsecqztgtgrrp4jmsxp4qzujrvp4rvazwwujp4azujp4tbwshnqatbfvp4gbwsrvtbp4azynp4hnqatbp4ectbujhnfvqztgp4sxwstgtgqzfv..");
     document.getElementById("FirstAnswer").style.display = "block";
   }
 
   var SecondAnswer = getParameterByName("sa")
   var PreviousSecondAnswer = getCookie("loc5_SecondAnswerCookie");
-  if (lazyHash(SecondAnswer) == 8247122917860826000)
+  if (lazyHash(SecondAnswer) == h_sa)
     {setCookie("loc5_SecondAnswerCookie", SecondAnswer, 365); LoadAll();} 
-  else if (lazyHash(PreviousSecondAnswer) == 8247122917860826000)
+  else if (lazyHash(PreviousSecondAnswer) == h_sa)
     {LoadAll();}
 
   function LoadAll(){
     document.getElementById("demo").innerHTML = "Success!";
-    document.getElementById("imgFirstAnswer").src = f("img.jpg");
+    document.getElementById("imgFirstAnswer").src = f(img_fa);
+    document.getElementById("fa_txt").innerHTML = A_Decode("QZp4hnqztgtgp4yhazujjmyhtbujhnp4gbwshngbp4qzhnp4azujtbp4azynp4hnqatbp4tbrvumtbgbp4azynp4hnqatbp4ynwstbtgrv..p4WSujqqtbgbhnwsumqzhntbp4hnqatbp4wxqzecrfp4gbwsrvtbp4azynp4hnqatbp4wsujgbhnqztgtgqzhnwsazuj,,p4gbsxtbecwsynwsecqztgtgrrp4hnqatbp4ecjmhnqzwwqzrrgbp4hnqaqzhnp4fvjmujp4qqtbfvhnwsecqztgtgrrp4jmsxp4qzujrvp4rvazwwujp4azujp4tbwshnqatbfvp4gbwsrvtbp4azynp4hnqatbp4ectbujhnfvqztgp4sxwstgtgqzfv..");
     document.getElementById("FirstAnswer").style.display = "block";
 
     document.getElementById("SecondAnswer").style.display = "block";
-    document.getElementById("DecodedMessage").innerHTML = A_Decode("YHtbgbgbqzumtbp4##55");
+    document.getElementById("DecodedMessage").innerHTML = A_Decode("WSp4qaqzqqtbp4qzujp4tbeehnfvqzazfvrvwsujqzfvwstgrrp4wwqzfvyhp4qatbqzfvhn..p4WXtbtbwxazsx--qztgazazp4rvazsx!!");
   }
 
 </script>
-
