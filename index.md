@@ -84,9 +84,11 @@ CustomReturn: false
  <tr>
   <td colspan="2" style="display: none;" id="p6done">
   </td>
-   <td colspan="2" style="display: none;" id="alldone">
-  </td>
  </tr>
+  <tr>
+    <td colspan="2" style="display: none;" id="alldone">
+    </td>
+   </tr>
   
  </table>
 </div>
@@ -141,7 +143,7 @@ CustomReturn: false
   CheckForFinished("loc2_SecondAnswerCookie", 8245356102421490000, "p2done", "WS''yhp4hnqaazjmumqahnynjmtgp4qzujrvp4umtbujtbfvazjmgb");
   CheckForFinished("loc3_SecondAnswerCookie", 8246959407606339000, "p3done", "WS''yhp4ectgtbqqtbfvp4qzgbp4qatbtgtg");
   CheckForFinished("loc4_SecondAnswerCookie", 8246957399872469000, "p4done", "🍑");
-  CheckForFinished("loc5_SecondAnswerCookie", 8247122917860826000, "p5done", "WSp4qaqzqqtbp4qzujp4tbeehnfvqzazfvrvwsujqzfvwstgrrp4wwqzfvyhp4qatbqzfvhn..");
+  CheckForFinished("loc5_SecondAnswerCookie", 8247122917860826000, "p5done", "WSp4qaqzqqtbp4qzujp4tbeehnfvqzazfvrvwsujqzfvwstgrrp4wwqzfvyhp4qatbqzfvhn");
   CheckForFinished("loc6_SecondAnswerCookie", 8244727662634403000, "p6done", "WS''qqtbp4ecazyhtbp4qzp4tgazujump4wwqzrrp4qzujrvp4qaqzqqtbp4yhqzujrrp4sxtgqzectbgbp4gbhnwstgtgp4hnazp4umaz");
   
   if (completed == 6){
