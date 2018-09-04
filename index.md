@@ -84,6 +84,8 @@ CustomReturn: false
  <tr>
   <td colspan="2" style="display: none;" id="p6done">
   </td>
+   <td colspan="2" style="display: none;" id="alldone">
+  </td>
  </tr>
   
  </table>
@@ -97,6 +99,8 @@ CustomReturn: false
 
 <script src = "/7571101397556063/htools.js"></script>
 <script>
+  var completed = 0;
+ 
   function getCookie(cname) {
       var name = cname + "=";
       var ca = document.cookie.split(';');
@@ -129,6 +133,7 @@ CustomReturn: false
        document.getElementById(TableRow).colspan = "2";
        document.getElementById(TableRow).innerHTML = A_Decode(EncodedMessage);
        if (EncodedMessage == "🍑") {document.getElementById(TableRow).innerHTML = "🍑";}
+       completed++;
      }
   }
 
@@ -138,4 +143,10 @@ CustomReturn: false
   CheckForFinished("loc4_SecondAnswerCookie", 8246957399872469000, "p4done", "🍑");
   CheckForFinished("loc5_SecondAnswerCookie", 8247122917860826000, "p5done", "WSp4qaqzqqtbp4qzujp4tbeehnfvqzazfvrvwsujqzfvwstgrrp4wwqzfvyhp4qatbqzfvhn..");
   CheckForFinished("loc6_SecondAnswerCookie", 8244727662634403000, "p6done", "WS''qqtbp4ecazyhtbp4qzp4tgazujump4wwqzrrp4qzujrvp4qaqzqqtbp4yhqzujrrp4sxtgqzectbgbp4gbhnwstgtgp4hnazp4umaz");
+  
+  if (completed == 6){
+       document.getElementById("alldone").style.display = "table-cell";
+       document.getElementById("alldone").colspan = "2";
+       document.getElementById("alldone").innerHTML = A_Decode("qzujrvp4WSp4gbqaazjmtgrvp4ujtbqqtbfvp4tbqqtbfvp4ynazfvumtbhnp4wshn..") + "❤️";
+  }
 </script>
